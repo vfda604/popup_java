@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Send a message</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div style="float: left">
+            <input type="submit" value="enviar mensaje" onclick="sendMessage()">
+        </div>
+            
+        <textarea id="txtarea" rows="4" cols="50" style="border: 2px;"></textarea>
+            
+        <script>
+            function sendMessage(){
+                
+                var msg = document.getElementById(txtarea).value;
+                
+                console.log(msg);
+            }
+        </script>
+        
+    </body>
+</html>
